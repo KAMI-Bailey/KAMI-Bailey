@@ -7,7 +7,7 @@ KAMI Bailey
 
 [ronmamo](https://github.com/ronmamo/) for [Reflections](https://github.com/ronmamo/reflections)
 
-[S-B99](https://github.com/S-B99) For [KAMI Blue](https://github.com/S-B99/KAMI-Blue)
+[S-B99](https://github.com/S-B99) For [KAMI Blue](https://github.com/S-B99/kamiblue)
 
 The [Minecraft Forge team](https://github.com/MinecraftForge) for [forge](https://files.minecraftforge.net/)
 
