@@ -9,6 +9,7 @@ import me.zeroeightsix.kami.setting.Setting;
 import me.zeroeightsix.kami.setting.Settings;
 import me.zeroeightsix.kami.setting.builder.SettingBuilder;
 import me.zeroeightsix.kami.util.Bind;
+import me.zeroeightsix.kami.command.Command;
 import net.minecraft.client.Minecraft;
 import org.lwjgl.input.Keyboard;
 
@@ -150,6 +151,7 @@ public class Module {
         onEnable();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.subscribe(this);
+        Command.sendChatMessage("Bailey moment for " + name.getValue());
     }
 
     public void disable() {
@@ -157,6 +159,7 @@ public class Module {
         onDisable();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.unsubscribe(this);
+        Command.sendChatMessage("Not Bailey moment for " + name.getValue());
     }
 
     public boolean isDisabled() {
