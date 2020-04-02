@@ -146,7 +146,10 @@ public class Module {
 
     protected void onDisable() {}
 
-    public void toggle() { setEnabled(!isEnabled()); }
+    public void toggle() { 
+        setEnabled(!isEnabled()); 
+        onToggle();
+    }
 
     public void enable() {
         enabled.setValue(true);
