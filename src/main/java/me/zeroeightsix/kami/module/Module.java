@@ -55,7 +55,6 @@ public class Module {
 
     public void onWorldRender(RenderEvent event) {}
     
-    //imma be working on this so yeah
     public void onToggle(){}
 
     public Bind getBind() {
@@ -147,14 +146,12 @@ public class Module {
 
     protected void onDisable() {}
 
-    public void toggle() { 
-        setEnabled(!isEnabled()); 
-        onToggle();
-    }
+    public void toggle() {setEnabled(!isEnabled());}
 
     public void enable() {
         enabled.setValue(true);
         onEnable();
+        onToggle();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.subscribe(this);
     }
