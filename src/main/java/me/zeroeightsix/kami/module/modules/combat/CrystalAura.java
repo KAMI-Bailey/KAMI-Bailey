@@ -588,7 +588,7 @@ public class CrystalAura extends Module {
     }
     
     public void onToggle(){
-        mc.player.sendChatMessage("Bailey enabled" this.name)
+        mc.player.sendChatMessage("Bailey enabled" this.name);
     }
 
     private void sendMessage(String message) {
