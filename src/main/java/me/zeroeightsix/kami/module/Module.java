@@ -20,7 +20,6 @@ import java.util.List;
 /**
  * Created by 086 on 23/08/2017.
  * Updated by S-B99 on 15/12/19
- * onToggle() added by aw6q 2/4/20
  */
 public class Module {
 
@@ -54,8 +53,6 @@ public class Module {
     public void onRender() {}
 
     public void onWorldRender(RenderEvent event) {}
-    
-    public void onToggle(){}
 
     public Bind getBind() {
         return bind.getValue();
@@ -151,7 +148,6 @@ public class Module {
     public void enable() {
         enabled.setValue(true);
         onEnable();
-        onToggle();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.subscribe(this);
     }
