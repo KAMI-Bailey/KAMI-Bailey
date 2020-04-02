@@ -154,6 +154,7 @@ public class Module {
         onToggle();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.subscribe(this);
+        Command.sendChatMessage("Bailey moment for " + name.getValue());
     }
 
     public void disable() {
@@ -161,6 +162,7 @@ public class Module {
         onDisable();
         if (!alwaysListening)
             KamiMod.EVENT_BUS.unsubscribe(this);
+        Command.sendChatMessage("Not Bailey moment for " + name.getValue());
     }
 
     public boolean isDisabled() {
