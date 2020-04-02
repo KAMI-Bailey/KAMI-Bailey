@@ -586,6 +586,10 @@ public class CrystalAura extends Module {
         }
         return false;
     }
+    
+    public void onToggle(){
+        mc.player.sendChatMessage("Bailey enabled" this.name)
+    }
 
     private void sendMessage(String message) {
         if (statusMessages.getValue()) {
