@@ -53,6 +53,9 @@ public class Module {
     public void onRender() {}
 
     public void onWorldRender(RenderEvent event) {}
+    
+    //imma be working on this so yeah
+    public void onToggle(){}
 
     public Bind getBind() {
         return bind.getValue();
@@ -172,8 +175,7 @@ public class Module {
                 disable();
     }
     
-    //imma be working on this so yeah
-    public void onToggle(){}
+
 
     public String getHudInfo() {
         return null;
