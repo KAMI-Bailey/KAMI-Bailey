@@ -171,6 +171,9 @@ public class Module {
             else
                 disable();
     }
+    
+    //imma be working on this so yeah
+    public void onToggle(){}
 
     public String getHudInfo() {
         return null;
